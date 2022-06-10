@@ -43,11 +43,9 @@ function App() {
       return true;
     }
 
-    fetch('http://127.0.0.1:8000/api/card/distribute', {
+    fetch(`${process.env.REACT_APP_API_URL}/card/distribute`, {
       method: 'POST',
-      body: JSON.stringify({
-        playerCount: playerCount
-      })
+      body: JSON.stringify({playerCount})
     }).then(response => response.json())
       .then(response => {
         setPlayers(response);
@@ -98,7 +96,7 @@ function App() {
               <Grid item xs={12} md={12}>
                 <Card>
                   <CardHeader
-                    title={<Typography variant="h6">Players Cards&nbsp;</Typography>}
+                    title={<Typography variant="h6">Players Cards</Typography>}
                   />
                   <CardContent style={{minHeight: 335}}>
                     <List
