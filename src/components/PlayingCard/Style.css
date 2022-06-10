@@ -2,6 +2,7 @@
 .playingCard {
     background-color: #201f1f;
     min-height: 100px;
+    min-width: 75px;
     width: 70px;
     border-radius: 5px;
     color: #ffffff;

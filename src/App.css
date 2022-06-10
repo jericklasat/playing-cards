@@ -1,5 +1,7 @@
 .App {
     padding: 10px;
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 .welcomeBoard {

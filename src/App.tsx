@@ -105,7 +105,7 @@ function App() {
                     >
                       {
                         players.map((player, index) => {
-                          return <ListItem key={index}>
+                          return <ListItem key={index} sx={{overflowX: 'auto'}}>
                                   <ListItemIcon className="playerNameContainer">
                                     <div>
                                       <PersonIcon />
